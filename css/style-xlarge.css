@@ -1,0 +1,22 @@
+/* skel-baseline v2.0.3 | (c) n33 | getskel.com | MIT licensed */
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 7em 0;
+	}
+
+    #slider-header .carousel-inner, #slider-header .carousel-inner .item {
+        height: 100%;
+    }
+
+    #slider-header .carousel-inner .item img { height: 100%; }
+    #slider-header, #slider-header .carousel-inner {
+        overflow: hidden;
+    }

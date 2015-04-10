@@ -1,0 +1,28 @@
+{
+  "name": "skel-layers",
+  "version": "2.0.2",
+  "description": "A Skel plugin for making off-canvas navigation and other stuff.",
+  "keywords": [
+    "skel",
+    "plugin",
+    "panels",
+    "skeljs"
+  ],
+  "homepage": "http://getskel.com",
+  "license": "MIT",
+  "ignore": [],
+  "main": "./src/skel-layers.js",
+  "dependencies": {
+    "skel": ">=2.1",
+    "jquery": ">=1.9"
+  },
+  "_release": "2.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.2",
+    "commit": "5e591054454803137954bceebef2c0889c834fde"
+  },
+  "_source": "git://github.com/n33/skel-layers.git",
+  "_target": "*",
+  "_originalSource": "skel-layers"
+}
