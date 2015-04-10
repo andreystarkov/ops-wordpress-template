@@ -8,19 +8,21 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
 	    <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta name="apple-touch-fullscreen" content="yes" />
-	    <meta name="apple-mobile-web-app-title" content="Finch Moving Services">
+	    <meta name="apple-mobile-web-app-title" content="Облпотребсоюз">
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 	    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" />
 	    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon.png" />
+
+
 
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" />
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/animate.css/animate.min.css" />
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/font-awesome/css/font-awesome.min.css" />
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/simple-line-icons/simple-line-icons.css" />
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/fakeloader/fakeLoader.css" />
-
-	    <link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/root.less" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/root.css" />
+<!-- 	    <link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/root.less" /> -->
 
 	    <noscript>
 	        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/skel.css" />
