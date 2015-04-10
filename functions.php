@@ -19,6 +19,48 @@ function getNews(){
                 <p><?php the_content(); ?></p>
             </a>
 
+    <? endwhile; endif; wp_reset_query();
+}
+
+function getItemsBySlug($slug){
+    $newsObj = get_category_by_slug($slug);
+    $newsId = $newsObj->term_id;
+
+    if ( have_posts() ) : query_posts('cat=' . $newsId);
+        while (have_posts()) : the_post(); ?>
+
+            <a href="<? echo get_permalink(); ?>" class="news-item 3u 12u$(small)">
+                <span class="image fit">
+<!--                     <img class="img-responsive" src="<?php
+                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'Full Size' );
+                echo $large_image_url[0];
+                ?>" alt="<?php the_title(); ?>"  /> -->
+                </span>
+                <b><?php get_post_thumbnail_id(); the_title(); ?></b>
+                <p><?php the_content(); ?></p>
+            </a>
+
+    <? endwhile; endif; wp_reset_query(); 
+}
+
+function getOffers(){
+    $newsObj = get_category_by_slug('offers');
+    $newsId = $newsObj->term_id;
+
+    if ( have_posts() ) : query_posts('cat=' . $newsId);
+        while (have_posts()) : the_post(); ?>
+
+            <a href="<? echo get_permalink(); ?>" class="news-item 3u 12u$(small)">
+                <span class="image fit">
+<!--                     <img class="img-responsive" src="<?php
+                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'Full Size' );
+                echo $large_image_url[0];
+                ?>" alt="<?php the_title(); ?>"  /> -->
+                </span>
+                <b><?php get_post_thumbnail_id(); the_title(); ?></b>
+                <p><?php the_content(); ?></p>
+            </a>
+
     <? endwhile; endif; wp_reset_query(); 
 }
 

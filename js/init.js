@@ -28,6 +28,7 @@
     }
 
 	$(function() {
+		$('#menu-main-menu').append('<li><a href="#slider" class="btn-up"><i class="icon-arrow-up"></i></a>');
 
 		if($(window).width() < 1100){
 		$('#slider-header').css({height: $(window).height()});
@@ -66,6 +67,7 @@
 			  }
 			}
 		});
+
 
 		$('.carousel-caption').each(function(){
 			$(this).addClass('animated');

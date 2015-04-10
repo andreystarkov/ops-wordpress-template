@@ -1,9 +1,41 @@
+
+<div class="container box-section wow fadeInUp" data-wow-duration="0.8s">
+        <h2 class="section-title"><i class="icn lite-round icon-bubble"></i> Задайте интересующий вас вопрос</h2>
+        <div class="box-form row">
+            <div class="12u">
+                <form method="post" action="#">
+                    <div class="row uniform">
+                        <div class="6u 12u$(xsmall)">
+                            <input type="text" name="name" id="name" value="" placeholder="Имя" />
+                        </div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="email" name="email" id="email" value="" placeholder="Обратная связь" />
+                        </div>
+                        <div class="12u$">
+                            <textarea name="message" id="message" placeholder="Ваше сообщение" rows="6"></textarea>
+                        </div>
+                        <div class="12u$">
+                            <ul class="actions">
+                                <li><a class="button-action button"><i class="fa fa-comment-o"></i> Отправить</a></li>
+                                <li><input type="reset" value="Очистить" class="alt" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 <footer id="footer">
     <div class="container">
         <div class="row double">
             <div class="8u 12u$(medium)">
-                <h2>Оренбургский Облпотребсоюз</h2>
-                <p>За все годы деятельности потребительская кооперация области сформировалась в широко разветвленную сеть торговых, заготовительных и производственных предприятий, стала самостоятельной уникальной системой, которая осуществляет единый хозяйственный цикл</p>
+                <h2>Наши партнеры</h2>
+                <ul class="alt partners">
+                    <li><a href="http://www.rus.coop/">Центросоюз Российской Федерации</a></li>
+                    <li><a href="http://www.orenburg-gov.ru/">Портал Правительства Оренбургской области</a></li>
+                    <li><a href="http://www.ruc.su/">Российский университет кооперации</a></li>
+                    <li><a href="http://xn--e1ajmafsw.xn--p1ai/">Оренбургский кооперативный техникум</a></li>
+                </ul>
             </div>
             <div class="contacts 4u$ 6u$(medium) 12u$(small)">
                 <h3>Контакты</h3>
@@ -102,11 +134,19 @@
 <script src="<?php echo get_template_directory_uri(); ?>/libs/wow.js/dist/wow.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/libs/flowtype/flowtype.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/libs/masonry.pkgd.min.js"></script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
+<?php wp_footer(); ?>
 
 <script>
     $(document).ready(function(){
+
+/*        var container = document.querySelector('#offers');
+        var msnry = new Masonry( container, {
+          // options...
+          itemSelector: '.news-item'
+        });*/
         $(".fakeLoader").fakeLoader({
             timeToHide:1200,
             bgColor:"#222",
@@ -116,18 +156,6 @@
     });
 </script>
 
-<?php wp_footer(); ?>
-
-
-		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
 
 	</body>
 </html>
